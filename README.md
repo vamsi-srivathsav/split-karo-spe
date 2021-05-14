@@ -1,5 +1,5 @@
 # Split-Karo
-Split-Karoe is an expense spliting application. It is built using MERN stack.
+Split-Karo is an expense spliting application. It is built using MERN stack.
 
 ## How to use
 
