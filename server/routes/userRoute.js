@@ -45,6 +45,7 @@ app.get("/getUser",(req,res)=>{
     jwt.verify(bearerToken,'secretkey',(err,authData)=>{
       if(err){
           console.log(err);
+          logger.error(err);
           res.sendStatus(403);
       }else{
         //   console.log(authData);
