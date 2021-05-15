@@ -1,3 +1,3 @@
 module.exports = {
-    mongo: 'mongodb://localhost:27017/split-karo'
+    mongo: 'mongodb://mongo:27017/split-karo'
 }
