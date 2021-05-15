@@ -8,49 +8,49 @@ let token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXN1bHQiOnsiaWQiOjUsImZpcn
 let id = 5;
 
 // Signup
-// describe('\n\n\n\nSignup ::', () => {
-//
-//     it('Create User Success\n\n', (done) => {
-//         request(baseUrl)
-//             .post('/signup')
-//             .send({
-//                 username: "vamsi3", email: "vamsi3@gmail.com", password: "123456789"
-//             })
-//             .end((err, res) => {
-//                 if (res.body.success === 0) {
-//                     logger.error(err);
-//                     throw err;
-//                 };
-//                 if (res.body.success === 1) {
-//                     console.log(res.body);
-//                     logger.info(res.body);
-//                 };
-//
-//                 done();
-//             });
-//     })
-//
-//
-//     it('Failed to signup \n\n', (done) => {
-//         request(baseUrl)
-//             .post('/signup')
-//             .send({
-//                 username: "vamsi3", email: "vamsi3@gmail.com", password: "123456789"
-//             })
-//             .end((err, res) => {
-//                 if (res.body.success === 1) {
-//                     logger.error(err);
-//                     throw err;
-//                 };
-//                 if (res.body.success === 0) {
-//                     console.log(res.body);
-//                     logger.info(res.body);
-//                 };
-//                 done();
-//             });
-//     })
-//
-// });
+describe('\n\n\n\nSignup ::', () => {
+
+    it('Create User Success\n\n', (done) => {
+        request(baseUrl)
+            .post('/signup')
+            .send({
+                username: "vamsi4", email: "vamsi4@gmail.com", password: "123456789"
+            })
+            .end((err, res) => {
+                if (res.body.success === 0) {
+                    logger.error(err);
+                    throw err;
+                };
+                if (res.body.success === 1) {
+                    console.log(res.body);
+                    logger.info(res.body);
+                };
+
+                done();
+            });
+    })
+
+
+    it('Failed to signup \n\n', (done) => {
+        request(baseUrl)
+            .post('/signup')
+            .send({
+                username: "vamsi3", email: "vams", password: "123456789"
+            })
+            .end((err, res) => {
+                if (res.body.success === 1) {
+                    logger.error(err);
+                    throw err;
+                };
+                if (res.body.success === 0) {
+                    console.log(res.body);
+                    logger.info(res.body);
+                };
+                done();
+            });
+    })
+
+});
 
 // Login
 describe('\n\n\n\nLogin test :: ', () => {
@@ -97,48 +97,3 @@ describe('\n\n\n\nLogin test :: ', () => {
             });
     })
 });
-//
-// // Get all users
-// describe('\n\n\n\nGet all user :: ', () => {
-//     it('Fetch all the users\n\n', (done) => {
-//
-//         request(baseUrl)
-//             .get('/getallusers')
-//             .set('Authorization', `Bearer ${token}`)
-//             .end((err, res) => {
-//                 if (res.body.success === 0) {
-//                     logger.error(err);
-//                     throw err;
-//                 };
-//                 if (res.body.success === 0) {
-//                     console.log(res.body);
-//                     logger.info(res.body);
-//                 };
-//                 done();
-//             });
-//     })
-// });
-//
-//
-// // Delete users
-// describe('\n\n\n\nDelete User ::', () => {
-//     it('Delete User Success\n\n', (done) => {
-//         request(baseUrl)
-//             .delete('/')
-//             .set('Authorization', `Bearer ${token}`)
-//             .send({
-//                 id: `${id}`,
-//             })
-//             .end((err, res) => {
-//                 if (res.body.success === 0) {
-//                     logger.error(err);
-//                     throw err;
-//                 };
-//                 if (res.body.success === 1) {
-//                     console.log(res.body);
-//                     logger.info(res.body)
-//                 };
-//                 done();
-//             });
-//     })
-// });
